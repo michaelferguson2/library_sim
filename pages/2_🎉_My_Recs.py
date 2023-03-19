@@ -181,7 +181,6 @@ st.title('Simple Library Simulation', anchor=None)
 st.subheader("Recommendations based on current \"My Books\" selection")
 
 my_books = st.session_state['active_my_books']
-print(my_books)
 
 if "no_user" == active_user:
     logged_out_text = """Please Login on the Home page to see your currently 
