@@ -52,7 +52,7 @@ mkl-random==1.2.2
 mkl-service==2.4.0
 munkres==1.1.4
 mysql-connector-python==8.0.31
-numpy==1.24.0
+numpy==1.22.3
 outcome==1.1.0
 packaging==22.0
 pandas==1.2.4
