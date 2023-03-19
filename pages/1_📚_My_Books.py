@@ -7,6 +7,18 @@ st.set_page_config(page_title="Library Simulation",
                    layout="wide")
 
 
+st.sidebar.markdown("""
+        <style>
+               .block-container {
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                }
+        </style>
+        """, unsafe_allow_html=True)
+
+
 if 'active_my_books' not in st.session_state:
     st.session_state['active_my_books'] = None
 

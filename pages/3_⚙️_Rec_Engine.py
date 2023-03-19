@@ -8,6 +8,16 @@ st.set_page_config(page_title="Library Simulation",
                    page_icon=r"./data/closed_book.png",
                    layout="wide")
 
+st.sidebar.markdown("""
+        <style>
+               .block-container {
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                }
+        </style>
+        """, unsafe_allow_html=True)
 
 @st.cache_resource
 def init_connection():

@@ -8,6 +8,18 @@ st.set_page_config(page_title="Library Simulation",
                    layout="wide")
 
 
+st.sidebar.markdown("""
+        <style>
+               .block-container {
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                }
+        </style>
+        """, unsafe_allow_html=True)
+
+
 @st.cache_resource
 def init_connection():
     conn = mysql.connector.connect(**st.secrets["db_credentials"])
